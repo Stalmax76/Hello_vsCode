@@ -1,15 +1,156 @@
-header {
-  background-color: #fff;
+/*Очистка файла от отсупов и границ*/
+
+/*Удаляем отступы по всем тегам*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+/*Изменяем подсчет ширины блока*/
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*Убераем линии и обводки*/
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+/*Обьявляем теги блочными*/
+nav,
+footer,
+header,
+aside {
+	display: block;
 }
 
-h1 {
-  color: green;
-}
-
+/*Выравнивание шрифтов, размеров в разных браузерах.
+ Запрет самовольного увеличения! */
+html,
 body {
-  font-size: 20px;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/*Назначение шрифта по умолчанию для тегов*/
+input,
+button,
+textarea {
+	font-family: inherit;
 }
 
-body div {
-  font-size: 10px;
+/*Убераем особенности поведения разных тегов в разных браузерах*/
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+/* ================================================================================================================== */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ffffff;
+}
+.list__container {
+	padding: 54px 50px 94px 50px;
+	color: #333333;
+	line-height: 30px;
+}
+.list__container div {
+	margin: 20px 0px 20px 0px;
+}
+h1 {
+	padding: 0px 0px 0px 2px;
+	color: #445161;
+	font-size: 30px;
+}
+h2 {
+	color: #445161;
+	font-size: 25px;
+}
+h3 {
+	font-size: 20px;
+	color: #445161;
+	line-height: 30px;
+	margin: 0px 0px 0px -1px;
+}
+.text {
+	color: #333333;
+	line-height: 25px;
+	padding: 0px 0px 0px 2px;
+}
+.text__big {
+	font-weight: bold;
+	line-height: 14px;
+}
+.red__text {
+	color: #ff0000;
+}
+
+.text__right {
+	text-align: right;
+}
+.text__upper {
+	text-transform: uppercase;
+}
+.text__italic {
+	font-style: italic;
+}
+.text__underline {
+	text-decoration: underline;
+	height: 15px;
+}
+.text__centrum {
+	text-align: center;
+}
+.text__big-size {
+	font-size: 24px;
+}
+.text__line-through {
+	text-decoration: line-through;
+}
+.text__tims {
+	font-family: "Times New Roman PSMT";
+}
+.text__shadow {
+	text-shadow: 1px 1px 1px #000000;
 }
