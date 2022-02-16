@@ -170,22 +170,25 @@ body {
 .main__button:active {
    background-color: #818181;
 }
-.main__input {
-   margin: 95px 0px 0px 0px;
-}
-.main__input-title {
-   text-transform: uppercase;
+.text p {
+   margin: 0px 0px 43px 0px;
    color: #000000;
-   font-size: 14px;
-   line-height: 40px;
-   letter-spacing: 2.8px;
-   margin: 0px 0px 20px 0px;
+   font-size: 18px;
+   line-height: 28px;
 }
-.main__input-text {
-   width: 292px;
-   height: 50px;
-   border: 1px solid #b0b0b0;
+.text p:last-child {
+   padding: 0px 0px 618px 0px;
+   font-size: 25px;
 }
-.main__input-text:focus {
-   box-shadow: 0 0 20px rgba(127, 190, 213, 0.93);
+.text p:last-child::first-letter {
+   color: #ff0000;
+   line-height: 28px;
+   font-size: 25px;
+}
+.text p:first-child {
+   margin: 118px 0px 43px 0px;
+   font-size: 18px;
+}
+.text p:first-child::first-line {
+   color: #ff0000;
 }
